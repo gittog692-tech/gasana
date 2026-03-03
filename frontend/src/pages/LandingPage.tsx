@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import LaminarSmoke from '../components/LaminarSmoke'
 import SpotlightCard from '../components/SpotlightCard'
+import logob from '../assets/logob.png'
 
 const appleEase: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -36,8 +37,11 @@ export default function LandingPage() {
                     className="liquid-glass landing-liquid-shell rounded-full px-8 py-3.5 flex items-center gap-10 shadow-2xl shadow-black/20"
                 >
                     <div className="flex items-center gap-2.5">
-                        <Brain className="w-5 h-5 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]" />
-                        <span className="text-xl font-bold tracking-tight drop-shadow-md">Gasana</span>
+                        <img
+                        src={logob}
+                        alt="Gasana Logo"
+                        className="h-10 w-auto object-contain drop-shadow-md" 
+                        />
                     </div>
                     <div className="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-300">
                         <a href="#features" className="hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">Features</a>

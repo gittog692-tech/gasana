@@ -5,6 +5,7 @@ import {
   GraduationCap, LogOut, Shield, ChevronDown, Search, Bell, Users
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
+import logoc from '../assets/logoc.png'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -49,9 +50,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="h-full flex flex-col bg-white border-r border-slate-200">
       {/* Brand */}
       <div className="p-6 flex items-center gap-3">
-        <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center shadow-lg shadow-slate-200">
-          <Brain className="w-5 h-5 text-white" />
-        </div>
+        <div className="bg-white p-1 rounded-2xl shadow-xl shadow-slate-200 border border-slate-200">
+        <img
+        src={logoc}
+        alt="Gasana Logo"
+        className="h-10 w-auto object-contain"
+      />
+      </div>
         <span className="font-bold text-xl text-slate-900 tracking-tight">Gasana</span>
       </div>
 

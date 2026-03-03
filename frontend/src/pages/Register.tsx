@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Brain, User, Mail, Lock, Eye, EyeOff, BookOpen, AlertCircle, ArrowLeft, GraduationCap } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { getDepartments } from '../services/api'
+import logo from '../assets/logo.png'
 
 interface Department {
     id: number
@@ -88,12 +89,19 @@ export default function Register() {
                     <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-pink-500/10 animate-slow-pulse"></div>
                     <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(255,255,255,0.03)_0%,transparent_50%)] animate-smoke"></div>
 
-                    <div className="relative z-10 max-w-sm">
+                        <div className="relative z-10 max-w-sm">
                         <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-12 transition-colors text-sm font-medium">
                             <ArrowLeft className="w-4 h-4" />
                             Back to Home
                         </Link>
-
+                        
+                        <div className="mb-10 flex justify-center">
+                            <img 
+                                src={logo}
+                                alt="Gasana logo"
+                                className="h-21 w-auto object-contain"
+                                />
+                        </div>
                         <div className="mb-12">
                             <h2 className="text-4xl font-bold mb-6 leading-tight text-white">Join Gasana.</h2>
                             <p className="text-slate-400 font-medium leading-relaxed">
