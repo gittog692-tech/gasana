@@ -400,7 +400,8 @@ export default function LandingPage() {
                         <Brain className="w-4 h-4" />
                         <span>Gasana</span>
                     </div>
-                    <span>© 2026 · Built for students, by students.</span>
+                    <span>© 2026 <strong>AXIOM</strong> · Built for students, by students.</span>
+                    <span>ALEN | ARCHA | GITTO | NEERAJA | SREEDURGA</span>
                     <div className="flex gap-6">
                         <Link to="/login" className="hover:text-slate-400 transition-colors">Sign In</Link>
                         <Link to="/register" className="hover:text-slate-400 transition-colors">Register</Link>
