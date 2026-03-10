@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Brain, User, Mail, Lock, Eye, EyeOff, BookOpen, AlertCircle, ArrowLeft, GraduationCap } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { getDepartments } from '../services/api'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.svg'
 
 interface Department {
     id: number

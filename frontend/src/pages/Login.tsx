@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Brain, Mail, Lock, Eye, EyeOff, AlertCircle, ArrowLeft, CheckCircle2 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
-import logob from '../assets/logob.png'
+import logob from '../assets/logob.svg'
 
 export default function Login() {
     const [email, setEmail] = useState('')

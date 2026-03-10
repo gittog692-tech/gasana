@@ -5,7 +5,7 @@ import {
   GraduationCap, LogOut, Shield, ChevronDown, Search, Bell, Users
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
-import logoc from '../assets/logoc.png'
+import logoc from '../assets/logoc.svg'
 
 interface LayoutProps {
   children: React.ReactNode
