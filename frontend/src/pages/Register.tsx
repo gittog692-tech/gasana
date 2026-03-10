@@ -99,7 +99,7 @@ export default function Register() {
                             <img 
                                 src={logo}
                                 alt="Gasana logo"
-                                className="h-21 w-auto object-contain"
+                                className="max-h-40 w-auto object-contain"
                                 />
                         </div>
                         <div className="mb-12">
