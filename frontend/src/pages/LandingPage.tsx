@@ -4,6 +4,8 @@ import { useAuth } from '../context/AuthContext'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import LaminarSmoke from '../components/LaminarSmoke'
 import SpotlightCard from '../components/SpotlightCard'
+import logob from '../assets/logob.svg'
+import logod from '../assets/logod.svg'
 
 const appleEase: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -36,8 +38,11 @@ export default function LandingPage() {
                     className="liquid-glass landing-liquid-shell rounded-full px-8 py-3.5 flex items-center gap-10 shadow-2xl shadow-black/20"
                 >
                     <div className="flex items-center gap-2.5">
-                        <Brain className="w-5 h-5 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]" />
-                        <span className="text-xl font-bold tracking-tight drop-shadow-md">Gasana</span>
+                        <img
+                        src={logob}
+                        alt="Gasana Logo"
+                        className="h-10 w-auto object-contain drop-shadow-md" 
+                        />
                     </div>
                     <div className="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-300">
                         <a href="#features" className="hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">Features</a>
@@ -396,8 +401,13 @@ export default function LandingPage() {
             {/* ── Footer ───────────────────────────────────────────────────── */}
             <footer className="relative z-10 py-12 px-6 border-t border-white/5">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-600 uppercase tracking-widest font-medium">
-                    <div className="flex items-center gap-2">
-                        <Brain className="w-4 h-4" />
+                    <div className="flex items-center gap-2.5">
+                        <img
+                        src={logod}
+                        alt="Gasana Logo"
+                        className="h-10 w-auto object-contain drop-shadow-md" 
+                        />
+
                         <span>Gasana</span>
                     </div>
                     <span>© 2026 <strong>AXIOM</strong> · Built for students, by students.</span>

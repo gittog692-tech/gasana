@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Brain, Mail, Lock, Eye, EyeOff, AlertCircle, ArrowLeft, CheckCircle2 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
+import logob from '../assets/logob.svg'
 
 export default function Login() {
     const [email, setEmail] = useState('')
@@ -37,10 +38,14 @@ export default function Login() {
                         Back
                     </Link>
 
-                    <div className="max-w-sm mx-auto w-full">
+                    <div className="max-w-sm mx-auto w-full mt-12">
                         <div className="mb-10">
                             <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-slate-200">
-                                <Brain className="w-6 h-6 text-white" />
+                                <img 
+                                    src={logob}
+                                    alt="Gasana Logo"
+                                    className="h-10 w-auto object-contain drop-shadow-md"
+                                    />
                             </div>
                             <h1 className="text-3xl font-bold text-slate-900 mb-2 tracking-tight">Welcome back to Gasana</h1>
                             <p className="text-slate-500">Please enter your details to sign in.</p>
@@ -120,6 +125,7 @@ export default function Login() {
                     <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(255,255,255,0.03)_0%,transparent_50%)] animate-smoke"></div>
 
                     <div className="relative z-10 max-w-sm">
+                    
                         <div className="glass-panel p-6 rounded-2xl mb-8 rotate-3 hover:rotate-0 transition-transform duration-500 cursor-default border border-white/10">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white">
