@@ -39,9 +39,9 @@ export default function LandingPage() {
                 >
                     <div className="flex items-center gap-2.5">
                         <img
-                        src={logob}
-                        alt="Gasana Logo"
-                        className="h-10 w-auto object-contain drop-shadow-md" 
+                            src={logob}
+                            alt="Gasana Logo"
+                            className="h-10 w-auto object-contain drop-shadow-md"
                         />
                     </div>
                     <div className="hidden md:flex items-center gap-8 text-[13px] font-medium text-slate-300">
@@ -403,11 +403,10 @@ export default function LandingPage() {
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-600 uppercase tracking-widest font-medium">
                     <div className="flex items-center gap-2.5">
                         <img
-                        src={logod}
-                        alt="Gasana Logo"
-                        className="h-10 w-auto object-contain drop-shadow-md" 
+                            src={logod}
+                            alt="Gasana Logo"
+                            className="h-10 w-auto object-contain drop-shadow-md"
                         />
-
                         <span>Gasana</span>
                     </div>
                     <span>© 2026 <strong>AXIOM</strong> · Built for students, by students.</span>

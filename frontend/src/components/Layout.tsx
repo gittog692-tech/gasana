@@ -51,12 +51,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Brand */}
       <div className="p-6 flex items-center gap-3">
         <div className="bg-white p-1 rounded-2xl shadow-xl shadow-slate-200 border border-slate-200">
-        <img
-        src={logoc}
-        alt="Gasana Logo"
-        className="h-10 w-auto object-contain"
-      />
-      </div>
+          <img
+            src={logoc}
+            alt="Gasana Logo"
+            className="h-10 w-auto object-contain"
+          />
+        </div>
         <span className="font-bold text-xl text-slate-900 tracking-tight">Gasana</span>
       </div>
 
